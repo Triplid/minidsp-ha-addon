@@ -1,8 +1,7 @@
 name: "miniDSP 2x4HD Controller"
 version: "1.0.0"
 slug: "minidsp"
-description: "Test miniDSP addon"
-url: "https://github.com/Triplid/minidsp"
+description: "Control miniDSP 2x4HD via USB (HID) using Python API"
 startup: "services"
 boot: "auto"
 arch:
@@ -11,5 +10,8 @@ arch:
   - amd64
   - i386
 host_network: false
+host_hardware: true
 options: {}
 schema: {}
+ports:
+  "8080": 8080
